@@ -8,6 +8,7 @@
       background-color: #222;
       color: #fff;
       text-align: center;
+      font-size: 20px;
     }
     
     a {
@@ -22,13 +23,25 @@
       margin-left: auto;
     }
     
+    .flex_container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
     .text_box {
+      width: 40%;
+      flex-grow: 1;
       margin: 10px;
       border-radius: 10px;
       display: inline-block;
       padding: 10px;
       background-color: #4e4e4e;
       box-shadow: 0px 0px 10px 5px #1b1b1b;
+    }
+    
+    .all_across {
+      width: 100%;
     }
     
     .pricing_info {
@@ -48,11 +61,17 @@
       .container {
         width: 724px;
       }
+      .text_box {
+        width: 40%;
+      }
     }
     
     @media (max-width: 767px) {
       .container {
         width: auto;
+      }
+      .text_box {
+        width: 100%;
       }
     }
     
@@ -67,214 +86,237 @@
   
     <h2>Emoncms.org Pricing</h2>
     
-    <!--
-     #############################################################################
-     ##################### BOX 1 #################################################
-     #############################################################################
-    -->
-    
-    <div class="text_box">
-  
-      <p>
-        Emoncms.org is <strong>pay-as-you-go</strong>
-      </p>
+    <div class="flex_container">
       
-      <p>
-        ======================= <br>
-        <i>illustration</i><br>
-        ======================= <br>
-      </p>
-    
-    </div>
-    
-    <!-- /END BOX 1 -->
-    
-    <!--
-     #############################################################################
-     ##################### BOX 2 #################################################
-     #############################################################################
-    -->
-    
-    <div class="text_box">
+      <!--
+       #############################################################################
+       ##################### BOX 1 #################################################
+       #############################################################################
+      -->
       
-      <p>
-        Buy credit from the <strong><a href="https://openenergymonitor.org">OpenEneryMonitor Shop</a></strong>
-      </p>
-  
-      <p>
-        ======================= <br>
-        <i>illustration</i><br>
-        ======================= <br>
-      </p>
+      <div class="text_box all_across">
+    
+        <p>
+          Emoncms.org is <strong>pay-as-you-go</strong>
+        </p>
+
+      </div>
+      
+      <!-- /END BOX  -->
+      
+      <!--
+       #############################################################################
+       ##################### BOX 2 #################################################
+       #############################################################################
+      -->
+      
+      <div class="text_box">
         
-      <p class="pricing_info">1 &times; Emoncms.org credit = &pound;1 (GBP) </p>
+        <p>
+          Buy Emoncms.org credits from the <br>
+          <strong><a href="https://openenergymonitor.org">OpenEneryMonitor Shop</a></strong>
+        </p>
+    
+        <p>
+          ======================= <br>
+          <i>illustration</i><br>
+          ======================= <br>
+        </p>
+          
+      </div>
       
+      <!-- /END BOX  -->
+      
+      <!--
+       #############################################################################
+       ##################### BOX 3 #################################################
+       #############################################################################
+      -->
+      
+      <div class="text_box">
+            
+        <p>
+          Buy any hardware from the <strong><a href="https://openenergymonitor.org">OpenEneryMonitor Shop</a></strong> <br>
+          and you will get Emoncms.org credits worth <br>
+          <strong>20%</strong> of the items in your cart
+        </p>
+        
+        <p>
+          ======================= <br>
+          <i>illustration</i><br>
+          ======================= <br>
+        </p>
+        
+      </div>
+      
+      <!-- /END BOX  -->
+      
+      <!--
+       #############################################################################
+       ##################### BOX 4 #################################################
+       #############################################################################
+      -->
+      
+      <div class="text_box all_across">
+          
+        <p>1 &times; Emoncms.org credit = &pound;1 (GBP) </p>
+        
+      </div>
+      
+      <!-- /END BOX  -->
+      
+      <!--
+       #############################################################################
+       ##################### BOX 5 #################################################
+       #############################################################################
+      -->
+      
+      <div class="text_box all_across">
+        
+        <p>1 &times; Emoncms.org credit = 1 &times; data <strong>feed</strong> per <strong>year</strong></p>
+        
+      </div>
+      
+      <!-- /END BOX  -->
+    
     </div>
     
-    <!-- /END BOX 2 -->
+    <br>
     
-    <!--
-     #############################################################################
-     ##################### BOX 3 #################################################
-     #############################################################################
-    -->
+    <hr>
     
-    <div class="text_box">
+    <br>
+    
+    <div class="flex_container">
+
+      <!--
+       #############################################################################
+       ##################### BOX 6 #################################################
+       #############################################################################
+      -->
+      
+      <div class="text_box">
+        
+        <p>
+          <strong>"... How much will it cost?"</strong> <br><br>
+          
+          Say you have bought an <a href="https://openenergymonitor.com/emonpi-3/">emonPi</a>...
+          
+        <p>
+          ======================= <br>
+          <i>Picture of an emonPi</i><br>
+          ======================= <br>
+        </p>
+      
+      </div>
+      
+      <!-- /END BOX  -->
+      
+      <!--
+       #############################################################################
+       ##################### BOX 7 #################################################
+       #############################################################################
+      -->
+      
+      <div class="text_box">
+        
+        <p>
+          You have a CT clip and a AC Voltage sensor to monitor power...
+        </p>
+          
+        <p>
+          ======================= <br>
+          <i>Picture of clips and ac sensor</i><br>
+          ======================= <br>
+        </p>
+        
+      </div>
+      
+      <!-- /END BOX  -->
+      
+      <!--
+       #############################################################################
+       ##################### BOX 8 #################################################
+       #############################################################################
+      -->
+      
+      <div class="text_box">
+        
+        <p>
+          And connected a temperature sensor...
+        </p>
+        
+        <p>
+          ======================= <br>
+          <i>Picture of temp sensor</i><br>
+          ======================= <br>
+        </p>
+        
+      </div>
+      
+      <!-- /END BOX  -->
+      
+      <!--
+       #############################################################################
+       ##################### BOX 9 #################################################
+       #############################################################################
+      -->
+  
+      <div class="text_box">
+    
+        <p>
+          Real-time data from the <strong>emonPi</strong> can be logged to a <strong>feed</strong>. <br>
+          A feed allows you to view data recorded over a period of time. <br>
+          
+      </div>
+      
+      <div class="text_box">
           
       <p>
-        If you buy any hardware from the <strong><a href="https://openenergymonitor.org">OpenEneryMonitor Shop</a></strong>, <br>
-        you will be rewarded with Emoncms.org credits worth <br>
-        <strong>20%</strong> of the items in your cart!
-      </p>
-      
-      <p>
-        ======================= <br>
-        <i>illustration</i><br>
-        ======================= <br>
-      </p>
-      
-    </div>
-    
-    <!-- /END BOX 3 -->
-    
-    <!--
-     #############################################################################
-     ##################### BOX 4 #################################################
-     #############################################################################
-    -->
-    
-    <div class="text_box">
-      
-      <p>1 &times; Emoncms.org credit = 1 &times; <strong>feed</strong> per <strong>year</strong></p>
-      
-    </div>
-    
-    <div class="text_box">
-
-    <!--
-     #############################################################################
-     ##################### BOX 5 #################################################
-     #############################################################################
-    -->
-      
-      <p>
-        <strong>"... How much will it cost?"</strong> <br><br>
-        
-        Say you have bought an <a href="https://openenergymonitor.com/emonpi-3/">emonPi</a>...
-        
-      <p>
-        ======================= <br>
-        <i>Picture of an emonPi</i><br>
-        ======================= <br>
-      </p>
-    
-    </div>
-    
-    <!-- /END BOX 5 -->
-    
-    <!--
-     #############################################################################
-     ##################### BOX 6 #################################################
-     #############################################################################
-    -->
-    
-    <div class="text_box">
-      
-      <p>
-        You have a CT clip and a AC Voltage sensor to monitor power...
+        In one feed, you might want to log the <strong>power</strong> used in your home over time:
       </p>
         
-      <p>
-        ======================= <br>
-        <i>Picture of clips and ac sensor</i><br>
-        ======================= <br>
-      </p>
-      
-    </div>
-    
-    <!-- /END BOX 6 -->
-    
-    <!--
-     #############################################################################
-     ##################### BOX 7 #################################################
-     #############################################################################
-    -->
-    
-    <div class="text_box">
-      
-      <p>
-        And connected a temperature sensor...
-      </p>
-      
-      <p>
-        ======================= <br>
-        <i>Picture of temp sensor</i><br>
-        ======================= <br>
-      </p>
-      
-    </div>
-    
-    <!-- /END BOX 7 -->
-    
-    <!--
-     #############################################################################
-     ##################### BOX 8 #################################################
-     #############################################################################
-    -->
-
-    <div class="text_box">
-  
-      <p>
-        Real-time data from the <strong>emonPi</strong> can be logged to a <strong>feed</strong>. <br>
-        A feed allows you to view data recorded over a period of time. <br>
-        
-    </div>
-    
-    <div class="text_box">
-        
-    <p>
-      In one feed, you might want to log the <strong>power</strong> used in your home over time:
-    </p>
-      
-      <p>
-        ======================= <br>
-        <i>Picture of power graph</i><br>
-        ======================= <br>
-      </p>
-      
-    <p>
-      In another feed, the kWh used per day to another feed:
-    </p>
-      
-      <p>
-        ======================= <br>
-        <i>Picture of energy graph</i><br>
-        ======================= <br>
-      </p>
-      
-      <p>
-        You will also have a feed for your temperature data:
-      </p>
+        <p>
+          ======================= <br>
+          <i>Picture of power graph</i><br>
+          ======================= <br>
+        </p>
         
       <p>
-        ======================= <br>
-        <i>Picture of temp graph</i><br>
-        ======================= <br>
+        In another feed, the kWh used per day to another feed:
       </p>
- 
-    </div>
-      
-    <div class="text_box">
-      
-      <p>
-        You will have 3 feeds in total.
-        Because you have bought these from the shop, you will have enough
-        credit from your purchase feeds will last... x years
-      </p>
-  
-    </div>
+        
+        <p>
+          ======================= <br>
+          <i>Picture of energy graph</i><br>
+          ======================= <br>
+        </p>
+        
+        <p>
+          You will also have a feed for your temperature data:
+        </p>
+          
+        <p>
+          ======================= <br>
+          <i>Picture of temp graph</i><br>
+          ======================= <br>
+        </p>
+   
+      </div>
+        
+      <div class="text_box">
+        
+        <p>
+          You will have 3 feeds in total.
+          Because you have bought these from the shop, you will have enough
+          credit from your purchase feeds will last... x years
+        </p>
     
-    <!-- /END BOX 8 -->
+      </div>
+      
+      <!-- /END BOX  -->
+      
+    </div>
 
   </div>
   
